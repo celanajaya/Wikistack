@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font-family: 14px "Hoefler Text", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: blue;
+}
+
+.form-group {
+	padding-top: 20px;
+}
+
+#footer {
+	padding-top: 20px;
+}

@@ -1,0 +1,23 @@
+<!-- addpage.html -->
+{% extends "layout.html" %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+<h1>Add Page</h1>
+<form action='/addPage/submit' method = 'post'>
+   <div class="form-group">
+     <label>Add Page</label>
+     <input name ="title" type="text" class="form-control" value={{title}}></input>
+   </div>
+   <div class="form-group">
+     <label>Page Text</label>
+     <textarea id="content" name="content" type="text" class="form-control" rows='8'>{{content}}</textarea>
+   </div>
+   <div class="form-group">
+     <label>Tags</label>
+     <input name="tags" type="text" class="form-control" value={{tags}}></input>
+   </div>
+   <button type="submit" class="btn">Submit</button>
+</form>
+{% endblock %}
